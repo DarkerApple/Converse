@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Profile</h2>
+
+        <!-- Avatar Display -->
+        <img src="default-avatar.png" id="avatar" class="avatar" alt="Avatar">
+        
+        <!-- Upload New Avatar -->
+        <input type="file" id="avatar-upload" accept="image/*">
+        <button onclick="updateAvatar()">Update Avatar</button>
+
+        <!-- Profile Information -->
+        <p><strong>Username:</strong> <span id="username-display"></span></p>
+        <p><strong>Role:</strong> <span id="role-display"></span></p>
+        
+        <button onclick="logOut()">Log Out</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
